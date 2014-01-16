@@ -1,0 +1,36 @@
+body{
+	background:#99B898;
+   width: 50%;
+   margin: 0 auto;
+}
+
+.button{
+   background-color: #FECEA8;
+   border: solid 5px #FECEA8;
+   border-radius: 50px;
+   width: 116px;
+   margin: 11px;
+   display: inline-block;
+   font-size: 22px;
+   font-family: Helvetica, Arial, Sans-serif;
+   line-height: 47px;
+   text-align: center;
+   color: #2A363B;
+   font-weight: bold;
+   text-transform: lowercase;
+}
+.button:hover {
+   color: #FF847C;
+}
+.button:active {
+   color: #E84A5F;
+}
+
+img{
+   text-align: center;
+   width: 100%;
+}
+
+#name{
+   margin: 0 auto;
+}
