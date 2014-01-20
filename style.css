@@ -34,3 +34,40 @@ img{
 #name{
    margin: 0 auto;
 }
+
+
+
+
+
+/* Homepage */
+
+/* Blogpost on Homepage */
+
+/* Links */
+
+/* Nav */
+
+.navbar {
+   text-align: center;
+   display: block;
+   width: 100%;
+}
+
+.navbar h1{
+   
+}
+.navbar li {
+   display: inline;
+}
+
+.navbar a {
+   display: inline-block;
+}
+
+/* About Page */
+
+/* Resume Page */
+
+/* Picture Page */
+
+/* Contacts Page */
