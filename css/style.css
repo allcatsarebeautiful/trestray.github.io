@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+	/*background:#99B898;*/
+   width: 800px;
+   margin: 0 auto;
+   font-family: 'Open Sans', sans-serif, Arial, Garamond, Times;
+   /*border: 1px solid red;*/
+}
+
+header{
+   /*border: 1px solid green;*/
+}
+
+ul{
+   /*border: 1px solid green;*/
+}
+
+img{
+   /*text-align: center;*/
+   /*width: 100%;*/
+   /*border: 1px solid blue;*/
+}
+
+div{
+   /*border: 1px solid yellow;*/
+}
+
+
+
+/* Homepage */
+.homepics {padding-top:100px;}
+.homepics img{ height: 200px; width: auto; border-radius: 10px;}
+
+#facts{ width: 75%; margin: 0 auto; }
+#facts h3{ padding-left: 5%; }
+
+/* Pictures */
+/*.pictures img{width: 31%; border-radius: 10px; }*/
+/* Resume */
+
+/* Links */
+a:link{ text-decoration: none; font-variant: small-caps; color: #000000; }
+a:visited{color: #000000; }
+/*a:active{ background-color: #C0C0C0; }*/
+a:hover{ 
+   /*background-color: #C0C0C0; */
+   font-weight: bolder;
+}
+
+/* Nav */
+.navbar { text-align: center; display: block; width: 100%; position: fixed; margin: 0 auto; top: 0; left: 0;}
+.navbar h1{ text-align: center; margin-bottom: 0px; }
+.navbar hr{ margin-bottom: 0px; margin-top: 0px; width: 200px;}
+.navbar ul{ margin: 0 auto; padding: 0; width: 250px;}
+.navbar li { display: inline; font-weight: bold;}
+.navbar a { display: inline-block; }
+
+.footer ul{ width: 25%; margin: 0 auto;}
+.footer li {display: inline;}
+.footer a {display: inline-block;}
+.footer a img{width: 64px; height: 64px;} 
+
+/* Media Queries */
+
+/*@media (min-width: 300px) { body {background: red;} }
+@media (min-width: 700px) { body {background: blue;} }
+@media (min-width: 1100px) { body {background: green;} }*/
+
+
+/*
+@media all and (min-width:500px) {
+   .navbar {float: left; width: 200px;}
+   #home {float: left; width: 600px;}
+   .footer {display: none;}
+     
+}
+*/

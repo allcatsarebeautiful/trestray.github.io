@@ -69,7 +69,8 @@ a:hover{
 }
 
 .navbar h1{
-      
+   text-align: inherit;
+         
 }
 .navbar li {
    display: inline;
