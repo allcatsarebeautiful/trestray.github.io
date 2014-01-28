@@ -1,46 +1,25 @@
-<!DOCTYPE html>
-<head>
-	<title>Travis heller</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header class="navBar">
-		<h1 title="Travis Heller">
-			<a href="index.html">Travis Heller</a>
-		</h1>
-		<!-- http://www2.gol.com/users/billp/articlehtml/lines.html -->
-		<hr>
-		<ul class="navbar">
-			<!-- make label of the page that we are on bold -->
-			<li>
-				<a href="#aboutMe" title="About Me">About</a>
-			</li>
-			<li>
-				<a href="blog.html" title="Blog">Blog</a>
-			</li>
-			<li>
-				<a href="pictures.html" title="Pictures">Pictures</a>
-			</li>
-			<li>
-				<a href="resume.html" title="Resume">Resume</a>
-			</li>
-		</ul>
-	</header>
-	<img src="nofun.jpg">
-	<h1 id="name">Travis Heller</h1>
+---
+layout: default
+title: My Blog
+---
 
-	<div>
-		<a href="about.html" class="button">About Me</a>
-		<a href="contact.html" class="button">Contact Me</a>
+<div id="home">
+	<div id="picscontainer" class="homepics">
+	    {% for post in site.posts %}
+		    <a href="{{ post.url }}"><img src={{ post.picture }}></a>
+	    {% endfor %}
+    </div>
+
+    <h1 id="aboutme">About Me</h1>
+    <img src="/assets/travisFace.jpg" alt="I gots the good genes; loving it.">
+	<p>Travis spends too much time on his computer, needs to find a new house cause he ain't into roach infestations, and has too little free time. He currently works as a software developer at E2open</p>
+
+	<div id="facts">
+		<h3>Fun Facts</h3>
+		<ul>
+			<li>I practice a little known martial art called Silat.</li>
+			<li>I moved to Austin from the Bay Area and miss it a lot.</li>
+			<li>I love the outdoors and enjoy backpacking and climbing.</li>
+		</ul>		
 	</div>
-	<div>
-		<h2>Cat Ipsum Blog Post</h2>
-		<p>Find something else more interesting attack feet yet flop over rub face on everything swat at dog stand in front of the computer screen. Give attitude. Inspect anything brought into the house hunt anything that moves&hellip; <a href="blogpost.html">Read More</a></p>
-</body>
-</html>
-
-
-
-/*
-	
-*/
+</div>
