@@ -4,22 +4,62 @@ title: My Blog
 ---
 
 <div id="home">
+	<h3>Click images to go to blog posts that will someday be fleshed out (maybe)... </h3>
+	<h5>(this will look better in the near future!)</h5>
 	<div id="picscontainer" class="homepics">
 	    {% for post in site.posts %}
 		    <a href="{{ post.url }}"><img src={{ post.picture }}></a>
 	    {% endfor %}
     </div>
 
-    <h1 id="aboutme">About Me</h1>
-    <img src="/assets/travisFace.jpg" alt="I gots the good genes; loving it.">
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="aboutmelink" />
+	<br>
+	<br>
+	<br>
+
+	<!-- put in some white space so that the nav bar floats nicely above -->	
+    <h1 id="aboutme">California boy, born and raised.</h1> <!-- Create a better tagline -->
+    <img src="/assets/pictures/travisBeach.png" alt="I gots the good genes; loving it." id="anonpic">
 	<p>Travis spends too much time on his computer, needs to find a new house cause he ain't into roach infestations, and has too little free time. He currently works as a software developer at E2open</p>
 
 	<div id="facts">
 		<h3>Fun Facts</h3>
-		<ul>
-			<li>I practice a little known martial art called Silat.</li>
-			<li>I moved to Austin from the Bay Area and miss it a lot.</li>
-			<li>I love the outdoors and enjoy backpacking and climbing.</li>
-		</ul>		
+		<hr>
+		<div>
+			<ul>
+				<li>My heart belongs to the redwoods and fog of Northern California.</li>
+				<li>I practice a little known martial art called <a href="http://www.tekpi.org">Silat</a>.</li>
+				<li>I studied Linguistics, Computer Science, and Psychology.</li>
+				<li>I moved to Austin from the Bay Area; the summers kill me.</li>
+				<li>I love the outdoors and enjoy backpacking, climbing, and stream hopping.</li>
+				<li>Earning my Eagle Scout instilled in me 'be prepared.'</li>
+				<li>I like thinking about the apocalypse and politics and guns.</li>
+				<li>Black IPAs, Porters, and Whiskey are my alcohols of choice.</li>
+				<li>I like my meat rare and my vegetables crunchy.</li>
+				<li>I'm an agonist and an adventurist; a laugher and smiler and enjoyer.</li>
+			</ul>		
+		</div>
 	</div>
 </div>
+
+        <!-- Stalactite JS -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.stalactite.js"></script>
+        <script type="text/javascript">
+            $('#picscontainer').stalactite({
+				duration: 350,                        // Duration of animation.
+				easing: 'swing',                      // Easing method.
+				cssPrefix: '.stalactite',             // The css naming convention.
+				cssPrep: true,                        // Should stalactite structurally modify css of children?
+				fluid: true,                          // Should stalactite recalculate on window resize?
+				loader: '<img />',                    // The contents of the loader. Defaults to a dataURL animated gif.
+				styles: {}                            // A style object to place on the child elements
+				// complete: function(v) { return v; }  // Callback function           
+			});            
+        </script>

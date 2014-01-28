@@ -8,10 +8,6 @@ body{
    /*border: 1px solid red;*/
 }
 
-header{
-   /*border: 1px solid green;*/
-}
-
 ul{
    /*border: 1px solid green;*/
 }
@@ -29,14 +25,23 @@ div{
 
 
 /* Homepage */
-.homepics {padding-top:100px;}
-.homepics img{ height: 200px; width: auto; border-radius: 10px;}
+#home {padding-top:100px;}
+#home h3 { margin-bottom: 0; margin-top: 0;}
+#home h5 { text-align: center; margin-top: 0;}
+.homepics img{width: 40%; margin: 4 auto;}
 
-#facts{ width: 75%; margin: 0 auto; }
-#facts h3{ padding-left: 5%; }
+#anonpic{ width: 100%; }
+
+#facts{ width: 80%; margin: 0 auto; }
+#facts h3{ margin-bottom: 5px; padding-left: 5%; }
+#facts hr{ margin: 0 0 0 5%; width: 90%;}
+#facts ul{ list-style: none; }
+#facts li:before { content: "\00BB \0020"; }
 
 /* Pictures */
-/*.pictures img{width: 31%; border-radius: 10px; }*/
+.pictures{ padding-top:100px;}
+.pictures img{width: 33%; margin: 4 auto;}
+
 /* Resume */
 
 /* Links */
@@ -49,14 +54,17 @@ a:hover{
 }
 
 /* Nav */
-.navbar { text-align: center; display: block; width: 100%; position: fixed; margin: 0 auto; top: 0; left: 0;}
-.navbar h1{ text-align: center; margin-bottom: 0px; }
-.navbar hr{ margin-bottom: 0px; margin-top: 0px; width: 200px;}
-.navbar ul{ margin: 0 auto; padding: 0; width: 250px;}
+.navbar { text-align: center; display: block; width: 256px; height: 72px; position: fixed;
+   margin: 0 auto; top: 10px; left: 0; right: 0; border: 2px solid black;
+   background-color: rgba(204,204,204,0.5); border-radius: 5px; z-index: 1;}
+.navbar h1{ margin: inherit;}
+.navbar hr{ margin: inherit; width: 200px;}
+.navbar ul{ margin: inherit; padding: 0; width: 250px;}
 .navbar li { display: inline; font-weight: bold;}
 .navbar a { display: inline-block; }
+/*#navbackground{width: 256px; height: 64px; display: block; background-color: gray; border: 2px solid purple;}*/
 
-.footer ul{ width: 25%; margin: 0 auto;}
+.footer ul{ width: 200px; margin: 0 auto; padding: 0;}
 .footer li {display: inline;}
 .footer a {display: inline-block;}
 .footer a img{width: 64px; height: 64px;} 
